@@ -14,6 +14,8 @@ function App() {
               <label style={{ display:"inline",float: "right"}}>Region: NA</label>
         </header>
         <body >
+        <button type="button">Create Meetup</button> 
+        <br/>
         <a >Search by game</a>
         <input type="text"/>
         <a >Search by user</a>
