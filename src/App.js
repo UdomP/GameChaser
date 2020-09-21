@@ -13,22 +13,22 @@ function App() {
             
               <label style={{ display:"inline",float: "right"}}>Region: NA</label>
         </header>
-        <body className="App-body">
+        <body >
+        <a >Search by game</a>
+        <input type="text"/>
+        <a >Search by user</a>
+        <input type="text"/>
         
-          
-      
-      
-          <a className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"> Click here for help setting up React!
-          </a>
-          
-          <p>
-            We're doing great team, keep it up!
-          </p>
-          
-          <img src="home.gif" alt="" width="500" height="333"/>
+          <br/>
+        <table style={{width:"100%",border: "1px solid black",borderCollapse: "collapse"}} >
+            <tr>
+              <th>Game</th>
+              <th>Name</th>
+              <th>Size</th>
+              <th>Time</th>
+              <th>Notes</th>
+            </tr>
+        </table> 
           
         </body>
     </div>
