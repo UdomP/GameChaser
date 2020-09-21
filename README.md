@@ -1,8 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This is a project for CIS 434.
+
+In order to run this project make sure you run npm install in the project directory before running npm start.
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Installs the nessecary packages needed to run the react program
 
 ### `npm start`
 
