@@ -15,19 +15,17 @@ function App() {
     <div className="App">
           <div className= "App-header" >
           
-                <h1 style={{display:"inline", alignItems:"center"}}> GAME CHASERS!</h1>
-                
-            
-              <label style={{ display: "inline", float: "right" }}>Region: NA</label>
+              <h1> GAME CHASERS!</h1>
+              <h2>Region: NA</h2>
 
           </div>{/*End of header*/}
 
           <div className="App-searchbar">
              
-            <a >Search by game</a>
+            Search by game-
             <input type="text" />
               &emsp;
-            <a >Search by user</a>
+            Search by user- 
             <input type="text" />
               &emsp;
             <Button variant="secondary" size="lg" onClick={btPress} > Search </Button>{''}
