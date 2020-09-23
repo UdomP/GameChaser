@@ -2,7 +2,32 @@ import React from 'react';
 
 
 
-function App() {
+
+
+class App extends React.Component{
+
+  constructor(props) {
+    super(props);
+    this.state = {loaded: false};  
+  }
+  componentDidMount= async()=>{
+    this.setState({loaded:true})
+}
+  render(){
+    const items = this.props.tableInfo;
+    
+    const itemList = items.map((items,index) =>
+    
+    <tr key={index}>
+    <td>{items.Game.toString()}</td>
+    <td>{items.Name.toString()}</td>
+    <td>{items.Size.toString()}</td>
+    <td>{items.Time.toString()}</td>
+    <td>{items.Notes.toString()}</td>
+  </tr>
+  );
+
+
   return (
   	
     <div className="App">
@@ -30,11 +55,17 @@ function App() {
               <th>Time</th>
               <th>Notes</th>
             </tr>
+            {this.state.loaded ?
+            <React.Fragment >
+                {itemList}
+                </React.Fragment>
+              :<div></div>
+              }
         </table> 
           
         </body>
     </div>
   );
 }
-
+}
 export default App;
