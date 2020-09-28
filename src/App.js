@@ -3,21 +3,20 @@ import Button from 'react-bootstrap/Button';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-
+import getRegion from "./Udom/getRegion";
 
 function btPress() {
     alert('Code to do here!');
 }
 
 
-
-
-
 class App extends React.Component{
 
   constructor(props) {
     super(props);
-    this.state = {loaded: false};  
+    this.state = {
+      loaded: false,
+    };  
   }
   componentDidMount= async()=>{
     this.setState({loaded:true})
@@ -42,10 +41,8 @@ class App extends React.Component{
           <div className= "App-header" >
           
                 <h1 style={{display:"inline", alignItems:"center"}}> GAME CHASERS!</h1>
-                
+                <getRegion/>
            
-           <label style={{ display: "inline", float: "right" }}>Region: NA</label>
-
           </div>{/*End of header*/}
 
           <div className="App-searchbar">
