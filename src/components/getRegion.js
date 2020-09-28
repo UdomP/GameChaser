@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class getRegion extends React.Component{
+ class GetRegion extends React.Component{
       state = {
         loading: true,
         ip : null,
@@ -30,5 +30,7 @@ export default class getRegion extends React.Component{
         if(this.state.timezone == "-07:00" || "-06:00"){
             return <div>West Coast</div>
         }
+        
       }
 }
+export default GetRegion
