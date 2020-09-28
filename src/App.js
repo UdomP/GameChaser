@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import getRegion from "./Udom/getRegion";
+import GetRegion from "./Udom/getRegion";
 
 function btPress() {
     alert('Code to do here!');
@@ -39,14 +39,10 @@ class App extends React.Component{
   	
     <div className="App">
           <div className= "App-header" >
-          
-<<<<<<< Updated upstream
                 <h1 style={{display:"inline", alignItems:"center"}}> GAME CHASERS!</h1>
-                <getRegion/>
-=======
-                <h1 style={{display:"inline", alignItems:"center"}}> GAME CHASERS!</h1> 
-                <GetRegion/>
->>>>>>> Stashed changes
+                <h1 style={{display:"inline", alignItems:"center"}}> <GetRegion/></h1> 
+                
+
            
           </div>{/*End of header*/}
 
