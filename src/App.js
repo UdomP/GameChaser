@@ -40,8 +40,13 @@ class App extends React.Component{
     <div className="App">
           <div className= "App-header" >
           
+<<<<<<< Updated upstream
                 <h1 style={{display:"inline", alignItems:"center"}}> GAME CHASERS!</h1>
                 <getRegion/>
+=======
+                <h1 style={{display:"inline", alignItems:"center"}}> GAME CHASERS!</h1> 
+                <GetRegion/>
+>>>>>>> Stashed changes
            
           </div>{/*End of header*/}
 
