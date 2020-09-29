@@ -16,19 +16,19 @@ export default class getRegion extends React.Component{
     
       render() {
         if (this.state.loading) {
-          return <div>loading...</div>;
+          return <div>loading...  </div>;
         }
         if (!this.state.ip) {
-          return <div>didn't get a ip</div>;
+          return <div>didn't get a ip  </div>;
         }
         if(this.state.timezone == "-04:00"){
-            return <div>East Coast</div>
+            return <div>East Coast  </div>
         }
         if(this.state.timezone == "-05:00"){
-            return <div>Central</div>
+            return <div>Central  </div>
         }
         if(this.state.timezone == "-07:00" || "-06:00"){
-            return <div>West Coast</div>
+            return <div>West Coast  </div>
         }
       }
 }
